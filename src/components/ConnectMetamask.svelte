@@ -20,15 +20,15 @@
       const accounts = await ethereum.request({
         method: "eth_requestAccounts",
       });
-      let currentBalance = await getBalance();
-      if (currentBalance > 0) {
+      // let currentBalance = await getBalance();
+      // if (currentBalance > 0) {
         userToken = accounts[0];
         checkIfUserExist();
-      } else {
-        connectHeading = "You should buy or mint Alien";
-        mintOrBuyMessage = true;
-        console.log("You don`t have permitions");
-      }
+      // } else {
+      //   connectHeading = "You should buy or mint Alien";
+      //   mintOrBuyMessage = true;
+      //   console.log("You don`t have permitions");
+      // }
     } catch (e) {
       if (e.code == "-32002") {
         metamaskErrorMessage = "You should unlock your metamask";
@@ -41,17 +41,17 @@
   async function connectMetamaskWalet() {
     if (typeof window.ethereum !== "undefined") {
       connectButtonText = 'Connecting...'
-      let networkCorrect = nft.checkMetamaskNetwork();
-      if (networkCorrect) {
+      // let networkCorrect = nft.checkMetamaskNetwork();
+      // if (networkCorrect) {
         getAccount();
-      } else {
-        connectButtonText = 'Connect Metamask';
-        metamaskErrorMessage = "Change MetaMask network";
-        matamaskErrorState = true;
-        setTimeout(() => {
-          matamaskErrorState = false;
-        }, 2500);
-      }
+      // } else {
+      //   connectButtonText = 'Connect Metamask';
+      //   metamaskErrorMessage = "Change MetaMask network";
+      //   matamaskErrorState = true;
+      //   setTimeout(() => {
+      //     matamaskErrorState = false;
+      //   }, 2500);
+      // }
     } else {
       window.open(
         "https://metamask.app.link/dapp/alien-airway.webflow.io",

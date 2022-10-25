@@ -20,14 +20,14 @@
   import ChatTop from "./components/ChatTop.svelte";
 
   const firebaseConfig = {
-    apiKey: "AIzaSyDc0mwx7dNlejQBrS_-cKZh3bI7DjB-zqs",
-    authDomain: "svelte-chat-63d4c.firebaseapp.com",
-    projectId: "svelte-chat-63d4c",
-    storageBucket: "svelte-chat-63d4c.appspot.com",
-    messagingSenderId: "773282306589",
-    appId: "1:773282306589:web:2138c74591c369bc7584f4",
-    measurementId: "G-1LT02K4PR0",
-  };
+  apiKey: "AIzaSyA6urwQQJa5PSFcSs7piwpAlhHsn_qCRPU",
+  authDomain: "svelte-chat-3385d.firebaseapp.com",
+  projectId: "svelte-chat-3385d",
+  storageBucket: "svelte-chat-3385d.appspot.com",
+  messagingSenderId: "697090262497",
+  appId: "1:697090262497:web:0ab69d313227d7b3a77ea0",
+  measurementId: "G-S6K1TVNYB7"
+};
 
   // Initialize Firebase
   const app = firebase.initializeApp(firebaseConfig);
@@ -342,6 +342,7 @@
 </main>
 
 <style>
+
   .main__chat__wrapper {
     position: relative;
   }
